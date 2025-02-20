@@ -19,6 +19,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#plans">Planos</a></li>
+                    <li class="nav-item"><button class="btn btn-secondary nav-link">Log In</button></li>
+                    <li class="nav-item"><button class="btn btn-primary nav-link">Sign Up</button></li>
                 </ul>
             </div>
         </div>
@@ -29,17 +32,38 @@
     </div>
 
     <div class="iframe-container">
-        <h2>Embedded Content</h2>
-        <iframe src="https://playcanv.as/b/8257f6ee" width="600" height="400" title="Example Iframe"></iframe>
+        <iframe src="https://playcanv.as/b/8257f6ee" width="100%" height="600" title="Example Iframe"></iframe>
     </div>
 
-    <section class="premium-section">
-        <h2>Premium Content</h2>
-        <p>Exclusive content for premium members.</p>
+    <section class="premium-section" id="plans">
+        <h2>Planos</h2>
+        <div class="plans-container">
+            <div class="plan basic">
+                <h3>Básico</h3>
+                <p class="price">$0</p>
+                <p>Perguntas mais genéricas</p>
+                <button class="btn btn-primary">Sign up</button>
+            </div>
+            <div class="plan plus">
+                <h3>Plus</h3>
+                <!-- <span class="badge">Learn a  skill</span> -->
+                <p class="price">$11.99/mês</p>
+                <p>Perguntas mais detalhadas</p>
+                <button class="btn btn-primary">Try Plus for free</button>
+            </div>
+            <div class="plan pro">
+                <h3>Pro</h3>
+                <span class="badge recommended">Recommended</span>
+                <!-- <span class="badge">Build a career</span> -->
+                <p class="price">$15.99/mês</p>
+                <p>Previsões astrológicas pessoais</p>
+                <button class="btn btn-primary">Try Pro for free</button>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 My Website Project. All rights reserved.</p>
+        <p>&copy; 2025 Bolastral. All rights reserved.</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
