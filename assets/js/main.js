@@ -59,6 +59,20 @@ Last Update: 9 May 2023
 			});
 		});
 	}
+	//microphone access
+	document.addEventListener('DOMContentLoaded', function() {
+		if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+			navigator.mediaDevices.getUserMedia({ audio: true })
+				.then(function(stream) {
+					console.log('Microphone access granted');
+				})
+				.catch(function(err) {
+					console.error('Microphone access denied', err);
+				});
+		} else {
+			console.error('getUserMedia not supported on your browser!');
+		}
+	});
 
 	// 3. Video popup
 	new VenoBox({
